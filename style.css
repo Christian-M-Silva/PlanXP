@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+    display: grid;
+    grid-template-areas: "nav main";
+    color: rgb(146, 148, 150);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 30px;
+}
+
+nav{
+   grid-area: nav;
+   height: 100vh;
+   border-right: 1px solid rgb(76, 77, 78);
+   border-bottom: 1px solid rgb(76, 77, 78);
+   padding-right: 5px;
+   width: 17vw;
+   position: fixed;
+}
+
+.innovate{
+    display: block;
+    color: rgb(146, 148, 150);
+    text-decoration: none;
+    text-align: center;
+    padding: 2.7rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    background: url(Image/piscada.png) no-repeat;
+    background-size: 30px;
+    background-position: 55px center;
+}
+
+.innovate:hover{
+    color: lightgrey;
+}
+
+
+.arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    transition: transform .8s;
+}
+
+.innovate:hover .arrow{
+    transform: rotate(355deg);
+}
+
+.link-logo{
+    display: block;
+    text-align: center;
+    margin-bottom: 4.6rem;
+}
+
+.logo{
+    height: 3.5rem;
+}
+
+.form li{
+    margin-bottom: 10px;
+    margin-left: 1rem;
+    list-style-type: none;
+    font-size: .9rem;
+}
+
+.form a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    margin-left: 19px;
+}
+
+#one{
+    background-image: url(Image/01..png);
+}
+
+#two{
+    background-image: url(Image/02..png);
+}
+
+#three{
+    background-image: url(Image/03..png);
+}
+
+#four{
+    background-image: url(Image/04..png);
+}
+
+#five{
+    background-image: url(Image/05..png);
+}
+
+.form a:hover{
+    color: lightgrey;
+    font-weight: bold;
+}
+
+#one:hover{
+    background-image: url(Image/01hover.png);
+}
+
+#two:hover{
+    background-image: url(Image/02hover.png);
+}
+
+#three:hover{
+    background-image: url(Image/03hover.png);
+}
+
+#four:hover{
+    background-image: url(Image/04hover.png);
+}
+
+#five:hover{
+    background-image: url(Image/05hover.png);
+}
+
+li{
+    background-position: 17px center;
+    background-repeat: no-repeat;
+    height: 30px;
+}
+main{
+    grid-area: main;
+    margin-left: 20vw;
+}
+
+#quemsomos, #fazemos, #news, #clientes, #contato{
+    height: 100vh;
+    display: flex;  
+    padding-top: 3rem;
+}
+
+#quemsomos{
+    flex-direction: column;
+}
+
+#quemsomos article{
+    width: 100vh;
+}
+
+#quemsomos h1{
+   margin-bottom: 20px;
+}
+
+#quemsomos p{
+    margin-bottom: 10px;
+}
+
+#quemsomos img{
+    height: 300px;
+    width: 500px;
+}
