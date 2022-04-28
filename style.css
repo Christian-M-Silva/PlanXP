@@ -5,8 +5,6 @@
 
 body{
     background-color: rgb(30, 30, 30);
-    display: grid;
-    grid-template-areas: "nav main";
     color: rgb(146, 148, 150);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow: hidden;
@@ -17,13 +15,28 @@ h1{
 }
 
 nav{
-   grid-area: nav;
    height: 100vh;
    border-right: 1px solid rgb(76, 77, 78);
    border-bottom: 1px solid rgb(76, 77, 78);
    padding-right: 5px;
-   width: 17vw;
+   width: 15vw;
    position: fixed;
+}
+
+.white{
+    color: white;
+    font-weight: 700;
+}
+
+.link-conteudo{   
+    color: rgb(146, 148, 150);
+    text-decoration: none;
+    font-size: .7rem;
+}
+
+.shaft{
+    width: 10px;
+    height: 10px;
 }
 
 .innovate{
@@ -36,13 +49,12 @@ nav{
     margin-bottom: 1.5rem;
     background: url(Image/piscada.png) no-repeat;
     background-size: 30px;
-    background-position: 55px center;
+    background-position: 45px center;
 }
 
 .innovate:hover{
     color: lightgrey;
 }
-
 
 .arrow{
     position: absolute;
@@ -69,7 +81,7 @@ nav{
 
 .form li{
     margin-bottom: 10px;
-    margin-left: 1rem;
+    margin-left: 3vw;
     list-style-type: none;
     font-size: .9rem;
 }
@@ -79,7 +91,6 @@ nav{
     text-decoration: none;
     display: block;
     line-height: 30px;
-    margin-left: 19px;
 }
 
 #one{
@@ -128,19 +139,24 @@ nav{
 }
 
 li{
-    background-position: 17px center;
+    background-position: 6px center;
     background-repeat: no-repeat;
     height: 30px;
 }
+
 main{
-    grid-area: main;
-    margin-left: 20vw;
+    margin-left: 17vw;
 }
 
 #quemsomos, #fazemos, #news, #clientes, #contato{
     height: 100vh;
     display: flex;  
-    padding-top: 3rem;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+#fazemos, #news{
+    padding-top: 14px;
 }
 
 #quemsomos{
@@ -152,7 +168,8 @@ main{
 }
 
 #quemsomos h1{
-   margin-bottom: 20px;
+    background: url(Image/01.title.png) no-repeat;
+    padding: 1.5rem;
 }
 
 #quemsomos p{
@@ -163,3 +180,135 @@ main{
     height: 300px;
     width: 500px;
 }
+
+#fazemos article{
+    width: 29rem;
+    margin-right: 3rem;
+}
+
+#fazemos .background-number{
+    background: url(Image/02.title.png) no-repeat;
+    padding: 1.5rem;
+    background-position: 30px center;
+}
+
+#fazemos h2, #fazemos p{
+    margin-bottom: 10px;
+}
+
+#fazemos p{
+    font-size: .8rem;
+}
+
+#fazemos .section-card{
+    display: flex;
+    width: 40vw;
+    gap: 1rem;
+    height: 351px;
+    margin-bottom: 3vh;
+}
+
+#fazemos .section-card section{ 
+    width: 270px; 
+}
+
+#fazemos .section-card .area-image{
+    height: 118px;
+    width: 141px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#fazemos .section-card .area-image img{
+    height: 126px;
+    width: 100%;
+}
+
+#fazemos .section-card p{
+    width: 146px;
+}
+
+#fazemos .section-card .area-image .icon{
+    height: 2rem;
+    width: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#fazemos .section-card .different .white{
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+#news .background-number{
+    background: url(Image/03.title.png) no-repeat;
+    padding: 1.5rem;
+    background-position: 30px 18px;
+}
+
+#news .background-number h1{
+    display: inline;
+}
+
+#news .area-card{
+    display: flex;
+    margin-bottom: 13vh;
+    margin-right: 2vw;
+}
+
+#news section{
+    font-size: .8rem;
+    width: 13.5rem;
+    margin-right: 0.5rem;
+    background-color: #292929;
+}
+
+#news .area-card .area-imagem img{
+    width: 100%
+}
+
+#news .conteudo{
+    padding: 1rem;
+}
+
+#news .area-card h3{
+    margin-top: .5rem;
+}
+
+#news .area-card span{
+    font-size: .9rem;
+    color: black;
+    background-color: #939598;
+}
+
+#news .area-card p{
+    margin-top: .5rem;
+    margin-bottom:.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+#clientes h1{
+    background: url(Image/04.title.png) no-repeat;
+}
+
+#contato h1{
+    background: url(Image/05.title.png) no-repeat;
+}
+
+#quemsomos h1, #news h1, #clientes h1, #contato h1{
+    margin-bottom: 10px;
+    background-position: 30px center;
+ }
+
+
+
+ /*No o que fazemos ele não respeita muito bem um tamanho especifico, cuidar no midia*/
